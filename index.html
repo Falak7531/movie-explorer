@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Explorer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <p class="tag">Movie Library</p>
+      <h1>Explore popular movies in one place</h1>
+      <p class="intro">Search by title, filter by genre, and narrow results by rating with a simple movie browser built using TMDB.</p>
+    </section>
+
+    <section class="controls">
+      <input type="text" id="search" class="search" placeholder="Search movies by title">
+      <select id="genre" class="select">
+        <option value="">All genres</option>
+      </select>
+      <select id="rating" class="select">
+        <option value="">All ratings</option>
+        <option value="8">8 and above</option>
+        <option value="7">7 and above</option>
+        <option value="6">6 and above</option>
+        <option value="5">5 and above</option>
+      </select>
+    </section>
+
+    <p id="status" class="status">Loading movies...</p>
+
+    <section id="movies" class="movies"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
